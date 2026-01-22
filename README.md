@@ -1,2 +1,58 @@
-# GuandanZone
-掼蛋游戏是一个基于 Spring Boot + Vue 3 构建的在线多人实时卡牌对战平台。项目采用前后端分离架构，通过 WebSocket 实现低延迟、高并发的实时通信，完整支持用户管理、房间匹配、游戏逻辑控制、AI辅助及手势交互等核心功能，旨在提供沉浸式、智能化的掼蛋游戏体验。
+# 掼蛋游戏项目
+
+## 项目结构
+
+```
+Login+Battle/
+├── backend/              # 后端项目
+│   ├── src/
+│   │   └── main/
+│   │       ├── java/     # Java源代码
+│   │       └── resources/ # 配置文件
+│   ├── pom.xml          # Maven配置
+│   └── README.md       # 后端说明文档
+├── frontend/            # 前端项目
+│   ├── src/
+│   │   ├── api/       # API接口
+│   │   ├── assets/    # 静态资源
+│   │   ├── components/# 组件
+│   │   ├── router/    # 路由配置
+│   │   ├── utils/     # 工具函数
+│   │   └── views/     # 页面组件
+│   ├── dist/          # 构建输出
+│   ├── package.json    # NPM配置
+│   └── vite.config.js # Vite配置
+├── 运行指南.md        # 项目运行指南
+└── .gitignore        # Git忽略配置
+```
+
+## 技术栈
+
+### 后端
+- Spring Boot 3.1.5
+- MyBatis Plus 3.5.4
+- WebSocket
+- MySQL
+
+### 前端
+- Vue 3
+- Vite
+- Element Plus
+- Axios
+
+## 快速开始
+
+### 后端启动
+```bash
+cd backend
+mvn spring-boot:run
+```
+
+### 前端启动
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+详细说明请参考 [运行指南.md](运行指南.md)
